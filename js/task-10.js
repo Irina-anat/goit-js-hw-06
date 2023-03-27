@@ -27,9 +27,13 @@ function onClick() {
 	return boxes.append(...boxesToAdd)	
 }
 
-destroyBtn.addEventListener(`click`, () =>
- boxes.innerHTML = ` `
-)
+destroyBtn.addEventListener(`click`, destroyBoxes) 
+
+function destroyBoxes() {
+boxes.innerHTML = ` `
+}
+
+
 
 
 /*boxes.innerHTML = ` `; очистити*/
